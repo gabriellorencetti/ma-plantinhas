@@ -24,3 +24,23 @@ a {
     background: black;
   }
 }
+
+:root {
+  --color-green: #606c38;
+  --color-green-dark: #283618;
+  --color-brown: #bc6c25;
+  --color-brown-dark: #582d18;
+  --color-brown-light: #dda15e;
+  --color-brown-ultra-light: #e6d8bc;
+  --color-beige: #fefae0;
+  --color-black: #121212;
+  --color-white: #fcfcfc;
+
+  --color-primary: var(--color-green);
+  --color-primary-dark: var(--color-green-dark);
+  --color-secondary: var(--color-brown);
+  --color-secondary-dark: var(--color-brown-dark);
+  --color-secondary-light: var(--color-brown-light);
+  --color-secondary-ultra-light: var(--color-brown-ultra-light);
+  --color-text: var(--color-beige);
+}

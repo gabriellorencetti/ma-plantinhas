@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-primary);
+  padding: 3em 3em;
+  font-size: 18px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.center {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.right {
+  display: flex;
+  gap: 5px;
+  align-items: flex-end;
+}

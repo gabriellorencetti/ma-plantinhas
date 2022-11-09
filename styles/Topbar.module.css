@@ -1,0 +1,8 @@
+.navbar {
+  background-color: #283618;
+}
+
+.navbarLeftItems {
+  display: flex;
+  gap: 12px;
+}
