@@ -3,24 +3,11 @@ import Link from "next/link";
 import React from "react";
 import { Card } from "react-bootstrap";
 import styles from "../styles/Home.module.css";
+import product_list from "../pages/api/product_list"
 
 function Product() {
   return (
-    <div style={{ display: "flex", flexDirection: "column" }}>
-      <Link href="/">
-        <Card style={{ width: "200px", height: "200px" }}>
-          <Image
-            alt=""
-            src="/images/carousel/c1.jpeg"
-            width="200"
-            height="200"
-          />
-        </Card>
-      </Link>
-      <div className={styles.productName}>Mandacaru</div>
-      <div className={styles.productOldPrice}>R$ 189,90</div>
-      <div className={styles.productPrice}>R$ 169,90</div>
-    </div>
+    product_list[0]
   );
 }
 
@@ -38,12 +25,26 @@ export default function Products({ title, background, light }) {
         {title}
       </div>
       <div className={styles.homeProducts}>
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
+        {product_list.map((el, id) => (
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <Link href="/">
+              <Card style={{ width: "200px", height: "200px" }}>
+                <Image
+                  alt= {el.alt}
+                  src= {el.src}
+                  width="200"
+                  height="200"
+                />
+              </Card>
+            </Link>
+            <div className={styles.productName}>{el.name}</div>
+            {el.isPromo &&
+            <div className={styles.productOldPrice}>{el.prevPrice}</div>
+            }
+            <div className={styles.productPrice}>{el.price}</div>
+          </div>
+          )
+        )}
       </div>
     </div>
   );
