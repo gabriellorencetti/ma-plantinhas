@@ -5,11 +5,6 @@ import { Card } from "react-bootstrap";
 import styles from "../styles/Home.module.css";
 import product_list from "../pages/api/product_list"
 
-function Product() {
-  return (
-    product_list[0]
-  );
-}
 
 export default function Products({ title, background, light }) {
   return (
@@ -27,7 +22,7 @@ export default function Products({ title, background, light }) {
       <div className={styles.homeProducts}>
         {product_list.map((el, id) => (
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <Link href="/">
+            <Link href="/productPage">
               <Card style={{ width: "200px", height: "200px" }}>
                 <Image
                   alt= {el.alt}
