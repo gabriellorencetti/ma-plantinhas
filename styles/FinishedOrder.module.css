@@ -1,0 +1,32 @@
+.finishedOrderDiv {
+  padding: 1em 0;
+  background: var(--color-secondary-ultra-light);
+  color: var(--color-secondary-dark);
+}
+
+.finishedOrder {
+  background-color: var(--color-beige);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 4em 2em;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.warning {
+  font-size: 2em;
+}
+
+.warning2 {
+  font-size: 1.5em;
+}
+
+.link {
+  text-decoration: underline;
+  font-size: 2em;
+}

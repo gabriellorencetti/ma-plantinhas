@@ -3,15 +3,16 @@ import Link from "next/link";
 import React from "react";
 import { Button, Card } from "react-bootstrap";
 import styles from "../styles/Home.module.css";
+import category_list from "../pages/api/category_list";
 
-function HomeCategoryItem() {
+function HomeCategoryItem({ src, alt, name }) {
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
       <Link href="/">
         <Card style={{ width: "250px", height: "250px", borderRadius: "100%" }}>
           <Image
-            alt=""
-            src="/images/carousel/c1.jpeg"
+            alt={alt}
+            src={src}
             width="250"
             height="250"
             style={{ borderRadius: "100%" }}
@@ -19,7 +20,7 @@ function HomeCategoryItem() {
         </Card>
       </Link>
       <div style={{}} className={styles.homeCategoriesName}>
-        Categoria
+        {name}
       </div>
     </div>
   );
@@ -28,10 +29,14 @@ function HomeCategoryItem() {
 function HomeCategories() {
   return (
     <div className={styles.homeCategories}>
-      <HomeCategoryItem />
-      <HomeCategoryItem />
-      <HomeCategoryItem />
-      <HomeCategoryItem />
+      {category_list.map((category, id) => (
+        <HomeCategoryItem
+          src={category.src}
+          alt={category.alt}
+          name={category.name}
+          key={id}
+        />
+      ))}
     </div>
   );
 }
