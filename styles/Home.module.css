@@ -3,8 +3,16 @@
   background-color: var(--color-beige);
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 72px;
 }
+
+.homeCategoriesItem {
+  width: 225px;
+  height: 225px;
+  border-radius: 100%;
+}
+
 
 .homeProducts {
   padding: 3em 1em;
@@ -18,6 +26,36 @@
   display: flex;
   flex-direction: column;
   max-width: 200px;
+}
+
+.productCard {
+  width: 200px;
+  height: 200px;
+}
+
+@media (max-width: 707px) {
+  .homeCategories {
+    gap: 24px;
+
+  }
+
+  .homeCategoriesItem {
+    width: 150px;
+    height: 150px;
+  }
+
+  .homeProducts {
+    gap: 32px;
+  }
+
+  .product {
+    max-width: 150px;
+  }
+
+  .productCard {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 .productsTitleLight {

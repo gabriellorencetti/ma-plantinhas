@@ -9,14 +9,8 @@ function HomeCategoryItem({ src, alt, name }) {
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
       <Link href="/">
-        <Card style={{ width: "250px", height: "250px", borderRadius: "100%" }}>
-          <Image
-            alt={alt}
-            src={src}
-            width="250"
-            height="250"
-            style={{ borderRadius: "100%" }}
-          />
+        <Card className={styles.homeCategoriesItem}>
+          <Image alt={alt} src={src} fill style={{ borderRadius: "100%" }} />
         </Card>
       </Link>
       <div style={{}} className={styles.homeCategoriesName}>

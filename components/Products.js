@@ -28,8 +28,8 @@ export default function Products({
         {product_list.slice(initial, final).map((el, id) => (
           <div className={styles.product} key={id}>
             <Link href="/productPage">
-              <Card style={{ width: "200px", height: "200px" }}>
-                <Image alt={el.alt} src={el.src} width="200" height="200" />
+              <Card className={styles.productCard}>
+                <Image alt={el.alt} src={el.src} fill />
               </Card>
             </Link>
             <div className={styles.productName}>{el.name}</div>

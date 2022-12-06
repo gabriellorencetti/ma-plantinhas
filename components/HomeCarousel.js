@@ -11,6 +11,7 @@ function HomeCarousel() {
           alt="Logo do Maplantinhas, composto por duas flores, acompanhado da frase compre plantas sem sair de casa! e um fundo contendo uma costela de adão. "
           width={1920}
           height={500}
+          layout="responsive"
         />
         <Carousel.Caption>
           <h3></h3>
@@ -24,6 +25,7 @@ function HomeCarousel() {
           alt="Especial dia dos namorados, com o subtítulo Aproveite nossas promoções e presenteie sua pessoa querida e um fundo contendo sete flores de tipos e cores diversas e oito folhas amareladas. "
           width={1920}
           height={500}
+          layout="responsive"
         />
         <Carousel.Caption>
           <h3></h3>
@@ -37,6 +39,7 @@ function HomeCarousel() {
           alt="Entrega grátis, com o subtítulo Compre hoje e ganhe 10% de desconto na sua próxima compra. Ao lado esquerdo, há uma imagem de uma pessoa branca segurando um buquê de girassois."
           width={1920}
           height={500}
+          layout="responsive"
         />
         <Carousel.Caption>
           <h3></h3>
