@@ -80,7 +80,7 @@ export default function SpecificProdut({ id }) {
           </div>
 
           <div className={styles.buyButtons}>
-            <Link href="/">
+            <Link href="/cart">
               <input
                 type="button"
                 value="comprar agora"

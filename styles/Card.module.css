@@ -16,6 +16,10 @@
         margin-left: .5rem;
         margin-bottom: 1rem;
     } 
+    .img{
+        width: 280px;
+        height: 400px;
+    }
 }
 .formRows {
     width: 100%;
