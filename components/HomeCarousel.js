@@ -8,7 +8,7 @@ function HomeCarousel() {
         <Image
           className="d-block w-100"
           src="/images/carousel/header.png"
-          alt="First slide"
+          alt=""
           width={1920}
           height={500}
         />
@@ -20,8 +20,8 @@ function HomeCarousel() {
       <Carousel.Item>
         <Image
           className="d-block w-100"
-          src="/images/carousel/header.png"
-          alt="First slide"
+          src="/images/carousel/1.png"
+          alt=""
           width={1920}
           height={500}
         />
@@ -33,8 +33,8 @@ function HomeCarousel() {
       <Carousel.Item>
         <Image
           className="d-block w-100"
-          src="/images/carousel/header.png"
-          alt="First slide"
+          src="/images/carousel/2.png"
+          alt=""
           width={1920}
           height={500}
         />
