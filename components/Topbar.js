@@ -5,28 +5,26 @@ import styles from "../styles/Topbar.module.css";
 import CartIcon from "../icons/CartIcon";
 import UserIcon from "../icons/UserIcon";
 import Link from "next/link";
-import Dropdown from 'react-bootstrap/Dropdown';
+import Dropdown from "react-bootstrap/Dropdown";
 import { useState } from "react";
 
 function Topbar() {
-
-  const [checked, setChecked] = useState()
+  const [checked, setChecked] = useState();
 
   return (
     <Navbar variant="dark" expand="lg" className={styles.navbar}>
       <Container>
-        <Navbar.Brand href="/">
+        <Navbar.Brand href="/" className={styles.navbarBrand}>
           <Image
             alt=""
             src="/images/logo.svg"
-            width="30"
-            height="30"
+            width="48"
+            height="48"
             className="d-inline-block align-top"
           />{" "}
           MaPlantinhas
         </Navbar.Brand>
         <div className={styles.navbarLeftItems}>
-
           <Dropdown className={styles.dropdownColor} autoClose="outside">
             <Dropdown.Toggle className={styles.dropdownColor}>
               Acessibilidade
@@ -43,18 +41,23 @@ function Topbar() {
                 </div>
               </Dropdown.Item>
 
-              <Dropdown.Item onCLick={() => {}}>
-                Fonte Pequena
-              </Dropdown.Item>
+              <Dropdown.Item onCLick={() => {}}>Fonte Pequena</Dropdown.Item>
 
-              <Dropdown.Item onCLick={() => { document.body.style.fontSize = 1.2 }}>
+              <Dropdown.Item
+                onCLick={() => {
+                  document.body.style.fontSize = 1.2;
+                }}
+              >
                 Fonte Média
               </Dropdown.Item>
 
-              <Dropdown.Item onCLick={() => { document.body.style.fontSize = 1.4 }}>
+              <Dropdown.Item
+                onCLick={() => {
+                  document.body.style.fontSize = 1.4;
+                }}
+              >
                 Fonte Grande
               </Dropdown.Item>
-
             </Dropdown.Menu>
           </Dropdown>
 
