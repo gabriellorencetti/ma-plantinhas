@@ -5,7 +5,13 @@ import { Card } from "react-bootstrap";
 import styles from "../styles/Home.module.css";
 import product_list from "../pages/api/product_list";
 
-export default function Products({ title, background, light }) {
+export default function Products({
+  title,
+  background,
+  light,
+  initial = 0,
+  final = 6,
+}) {
   return (
     <div
       style={{
@@ -19,8 +25,8 @@ export default function Products({ title, background, light }) {
         {title}
       </div>
       <div className={styles.homeProducts}>
-        {product_list.map((el, id) => (
-          <div style={{ display: "flex", flexDirection: "column" }} key={id}>
+        {product_list.slice(initial, final).map((el, id) => (
+          <div className={styles.product} key={id}>
             <Link href="/productPage">
               <Card style={{ width: "200px", height: "200px" }}>
                 <Image alt={el.alt} src={el.src} width="200" height="200" />

@@ -16,11 +16,15 @@ export default function Home() {
       <Products
         title="Produtos em promoção"
         background="var(--color-secondary)"
+        initial={0}
+        final={6}
       />
       <Products
         title="Plantas para apartamento"
         background="var(--color-secondary-ultra-light)"
         light
+        initial={6}
+        final={12}
       />
     </div>
   );
