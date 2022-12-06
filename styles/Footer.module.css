@@ -24,3 +24,14 @@
   gap: 5px;
   align-items: flex-end;
 }
+
+@media (max-width: 707px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 48px;
+  }
+
+}
