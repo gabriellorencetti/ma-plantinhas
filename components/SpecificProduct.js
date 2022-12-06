@@ -90,7 +90,7 @@ export default function SpecificProdut({id}){
                             />
                         </Link>
 
-                        <Link href="/">
+                        <Link href="/cart">
                             <input
                             type="button"
                             value="adicionar ao carrinho"
@@ -110,11 +110,13 @@ export default function SpecificProdut({id}){
                 <Products
                 title="Você também pode gostar:"
                 light= "False"
+                initial="1"
                 />
 
                 <Products
                 title="Outros usuários também compraram:"
                 light= "False"
+                initial="1"
                 />
 
             </div>
