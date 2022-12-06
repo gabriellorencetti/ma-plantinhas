@@ -3,7 +3,7 @@
   justify-content: space-between;
   background-color: var(--color-primary);
   padding: 3em 3em;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .left {
@@ -16,7 +16,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .right {

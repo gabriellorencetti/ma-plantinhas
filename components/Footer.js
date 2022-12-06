@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "../styles/Footer.module.css";
 import Link from "next/link";
+import YoutubeIcon from "../icons/YoutubeIcon";
+import InstagramIcon from "../icons/InstagramIcon";
 
 export default function Footer() {
   return (
@@ -16,9 +18,12 @@ export default function Footer() {
         <div>Todos os direitos reservados</div>
       </div>
       <div className={styles.right}>
-        <Link href="/">YT</Link>
-        <Link href="/">IG</Link>
-        <Link href="/">FB</Link>
+        <Link href="/">
+          <YoutubeIcon />
+        </Link>
+        <Link href="/">
+          <InstagramIcon />
+        </Link>
       </div>
     </footer>
   );
