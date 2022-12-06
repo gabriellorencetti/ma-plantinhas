@@ -1,13 +1,22 @@
 const product_list = [
   {
-    src: "/images/carousel/c1.jpeg",
+    src: "/images/products/Mandacaru1.png",
     alt: "Exemplar de Ficus elastica com apenas alguns caules e folhas.",
     name: "Mandacaru",
     price: "R$ 169.90",
     isPromo: true,
     prevPrice: "R$ 189.90",
     // Daqui pra baixo só precisa pro produto que for ter tela própria.
-    productImages: ["/images/products/2.jpg", "/images/products/index.jpg"],
+    productImages: [
+      { 
+        src: "/images/products/Mandacaru1.png",
+        alt: "Exemplar do cactus Mandacaru, pequeno, com uma etiqueta e uma madeira com um escrito em um vaso preto e cheio de madeira preta."
+      },
+      { 
+        src: "/images/products/Mandacaru2.png",
+        alt: "Exemplar do cactus Mandacaru, maior que a outra imagem, em um vaso marrom e cheio de pequenas pedras."
+      },
+    ],
     rating: 4.5,
     avaliationNumbers: 121,
     instructions: [

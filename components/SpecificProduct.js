@@ -24,7 +24,7 @@ export default function SpecificProdut({id}){
                     {product_list[0]?.productImages.map((img, iid) => (
                         <Image
                         key={iid}
-                        src={img}
+                        src={img.src}
                         alt={img.alt}
                         width="74"
                         height="74"
@@ -36,7 +36,7 @@ export default function SpecificProdut({id}){
 
                 <div className={styles.mainImage}>
                     <Image
-                        src={product_list[0].productImages[mainImage]}
+                        src={product_list[0].productImages[mainImage].src}
                         alt={product_list[0].productImages[mainImage].alt}
                         layout="fill"
                         className={styles.image}
