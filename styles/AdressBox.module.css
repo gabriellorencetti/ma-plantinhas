@@ -1,0 +1,174 @@
+.containerExtern {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.containerIntern {
+    width: 80%;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #EDE4D0;
+    display: flex;
+    box-shadow: 0px 1px 5px gray;
+}
+
+.containerTop {
+    width: 100%;
+    height: 20%;
+    justify-self: center;
+    background-color: #C3C0A3;
+    display: flex;
+    align-items: center;
+
+}
+
+.title {
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #582D18;
+    font-weight: 600;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    color: #582D18;
+}
+
+.formRows {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+@media only screen and (max-width: 1000px) {
+    .formRows {
+        width: 250px;
+        margin-bottom: 0rem;
+    }
+    
+}
+.formRows1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.cep{
+    display: flex;
+    flex: 1;
+    /* background-color: red; */
+}
+.cepField {
+    width: 250px;
+    height: 3rem;
+    margin-left: 2rem;
+}
+.cepLabel{
+    margin-left: 2rem;
+}
+@media only screen and (max-width: 1000px) {
+    .cepField {
+        width: 250px;
+        margin-bottom: .5rem;
+    }
+    .cepLabel{
+        margin-top: .2rem;
+    }
+}
+.rua{
+    /* background-color: red; */
+    display: flex;
+    flex: 3;
+}
+.ruaField {
+    width: 750px;
+    height: 3rem;
+    margin-left: 2rem;
+}
+@media only screen and (max-width: 1000px) {
+    .ruaField {
+        width: 250px;
+        margin-bottom: .5rem;
+    }
+    
+}
+.ruaLabel{
+    margin-left: 2rem;
+}
+.boxField{
+    width: 100%;
+}
+
+.bairro{
+    display: flex;
+    flex: 4;
+    /* background-color: green; */
+
+}
+.bairroField {
+    width: 80%;
+    height: 3rem;
+    margin-left: 2rem;
+}
+.bairroLabel{
+    margin-left: 2rem;
+}
+@media only screen and (max-width: 1000px) {
+    .bairroField {
+        width: 250px;
+        margin-bottom: .5rem;
+    }
+}
+.cidade{
+    display: flex;
+    flex: 4;
+    /* background-color: yellow; */
+
+}
+.cidadeField {
+    width: 80%;
+    height: 3rem;
+    
+}
+@media only screen and (max-width: 1000px) {
+    .cidadeField {
+        width: 250px;
+        margin-left: 2rem;
+        margin-bottom: .5rem ;
+    }
+    .cidadeLabel {
+        margin-left: 2rem;
+    }
+}
+.numero{
+    display: flex;
+    flex: 2;
+    /* background-color: blue; */
+
+}
+.numeroField {
+    width: 100px;
+    height: 3rem;
+    /* margin-left: 2rem; */
+}
+/* .numeroLabel{
+    margin-left: 2rem;
+} */
+@media only screen and (max-width: 1000px) {
+    .numeroField {
+        width: 250px;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+    }
+    .numeroLabel {
+        margin-left: 2rem;
+    }
+}

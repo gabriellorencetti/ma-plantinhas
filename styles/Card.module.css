@@ -1,0 +1,54 @@
+
+.form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    color: #582D18;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+@media only screen and (max-width: 800px) {
+    .card{
+        margin-left: .5rem;
+        margin-bottom: 1rem;
+    } 
+}
+.formRows {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.Field {
+    width: 450px;
+    height: 3rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+@media only screen and (max-width: 1000px) {
+    .Field {
+        width: 250px;
+    }
+}
+.firstField{
+    margin-top: 2rem;
+}
+.boxField{
+    width: 100%;
+    /* height: 10%; */
+}
+.fields{
+    width: 100%;
+    /* height: 20%; */
+    display: flex;
+}
+.label{
+    margin-left: 2rem;
+}
+
