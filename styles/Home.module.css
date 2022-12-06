@@ -11,19 +11,26 @@
   display: flex;
   justify-content: center;
   gap: 40px;
+  flex-wrap: wrap;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
 }
 
 .productsTitleLight {
   font-size: 2em;
   padding: 1em 1.5em 0em;
-  font-weight: 500;
+  font-weight: bold;
   color: var(--color-secondary-dark);
 }
 
 .productsTitleDark {
   font-size: 2em;
   padding: 1em 1.5em 0em;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .productName {
