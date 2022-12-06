@@ -1,13 +1,17 @@
 import Image from "next/image";
 import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import styles from "../styles/Topbar.module.css";
 import CartIcon from "../icons/CartIcon";
 import UserIcon from "../icons/UserIcon";
 import Link from "next/link";
+import Dropdown from 'react-bootstrap/Dropdown';
+import { useState } from "react";
 
 function Topbar() {
+
+  const [checked, setChecked] = useState()
+
   return (
     <Navbar variant="dark" expand="lg" className={styles.navbar}>
       <Container>
@@ -22,7 +26,38 @@ function Topbar() {
           MaPlantinhas
         </Navbar.Brand>
         <div className={styles.navbarLeftItems}>
-          <Navbar.Text href="account">Acessibilidade</Navbar.Text>
+
+          <Dropdown className={styles.dropdownColor} autoClose="outside">
+            <Dropdown.Toggle className={styles.dropdownColor}>
+              Acessibilidade
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+              <Dropdown.Item onClick={() => setChecked(!checked)}>
+                <div className={styles.row}>
+                  <label className={styles.switch}>
+                    <input type="checkbox" checked={checked}></input>
+                    <span className={styles.slider}></span>
+                  </label>
+                  Auto-Contraste
+                </div>
+              </Dropdown.Item>
+
+              <Dropdown.Item onCLick={() => {}}>
+                Fonte Pequena
+              </Dropdown.Item>
+
+              <Dropdown.Item onCLick={() => { document.body.style.fontSize = 1.2 }}>
+                Fonte Média
+              </Dropdown.Item>
+
+              <Dropdown.Item onCLick={() => { document.body.style.fontSize = 1.4 }}>
+                Fonte Grande
+              </Dropdown.Item>
+
+            </Dropdown.Menu>
+          </Dropdown>
+
           <Navbar.Text>
             <Link href="account">
               <UserIcon />

@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.10.5",
     "@mui/material": "^5.10.16",
     "bootstrap": "^5.2.2",
+    "bootstrap4-toggle": "^3.6.1",
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.2",
     "next": "13.0.2",
