@@ -11,6 +11,7 @@
 .navbarLeftItems {
   display: flex;
   gap: 12px;
+  align-items: center;
 }
 
 /* The switch - the box around the slider */
@@ -88,4 +89,11 @@ input:checked+.slider:before {
 .row {
   display: flex;
   justify-content: space-between;
+}
+
+.loginButton{
+  background-color: Transparent;
+  border: 2px solid var(--color-green);
+  border-radius: 3px;
+  color: var(--color-green-ultra-light);
 }

@@ -10,6 +10,7 @@ import { useState } from "react";
 
 function Topbar() {
   const [checked, setChecked] = useState();
+  const [loggedIn, setLoggedIn] = useState(false);
 
   return (
     <Navbar variant="dark" expand="lg" className={styles.navbar}>
@@ -24,6 +25,7 @@ function Topbar() {
           />{" "}
           MaPlantinhas
         </Navbar.Brand>
+
         <div className={styles.navbarLeftItems}>
           <Dropdown className={styles.dropdownColor} autoClose="outside">
             <Dropdown.Toggle className={styles.dropdownColor}>
@@ -62,9 +64,21 @@ function Topbar() {
           </Dropdown>
 
           <Navbar.Text>
-            <Link href="account">
-              <UserIcon />
-            </Link>
+            {loggedIn ?
+              <input
+              type="button"
+              value="Bem vindo, Karen"
+              className={styles.loginButton}
+              onClick={(event) => setLoggedIn(lastLoginState => !lastLoginState)}
+              />
+              :
+              <input
+              type="button"
+              value="Entrar"
+              className={styles.loginButton}
+              onClick={(event) => setLoggedIn(lastLoginState => !lastLoginState)}
+              />
+            }
           </Navbar.Text>
           <Navbar.Text>
             <Link href="cart">
