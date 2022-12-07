@@ -25,6 +25,7 @@ function Topbar() {
           />{" "}
           MaPlantinhas
         </Navbar.Brand>
+
         <div className={styles.navbarLeftItems}>
           <Dropdown className={styles.dropdownColor} autoClose="outside">
             <Dropdown.Toggle className={styles.dropdownColor}>
@@ -66,7 +67,7 @@ function Topbar() {
             {loggedIn ?
               <input
               type="button"
-              value="Bem vindo, Fulano"
+              value="Bem vindo, Karen"
               className={styles.loginButton}
               onClick={(event) => setLoggedIn(lastLoginState => !lastLoginState)}
               />
