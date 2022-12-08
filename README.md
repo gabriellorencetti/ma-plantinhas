@@ -1,34 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Loja de Plantas | MaPlantinhas
 
-## Getting Started
+Caminho feliz de uma loja de plantas realizado para a disciplina SCC0260 - Interação Usuário-computador.
 
-First, run the development server:
+## Grupo composto por
+- [Bruno dos Santos](https://github.com/brunin-cps)
+- [Leonardo Fonseca Pinheiro](https://github.com/LeoFonsecaP)
+- [Luíza Pereira Pinto Machado](https://github.com/l-mach)
+- [Gabriel Garcia Lorencetti](https://github.com/gabriellorencetti)
+- [Maria Fernanda Lucio de Mello](https://github.com/mafemello)
+- [João Antônio Misson Milhorim](https://github.com/joaomisson)
+
+
+## Como rodar o projeto
+O projeto foi feito em React e Next.js e para rodá-lo é preciso:
+
+- instalar as dependências:
 
 ```bash
-npm run dev
-# or
-yarn dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- rodar o projeto:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Com o projeto rodando, abra [http://localhost:3000](http://localhost:3000) para vê-lo!
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Também é possível acessar o projeto através do link [ma-plantinhas-ihc.vercel.app](https://ma-plantinhas-ihc.vercel.app/).
