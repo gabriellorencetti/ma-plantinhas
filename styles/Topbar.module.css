@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #283618;
+  background-color: var(--color-primary-dark);
 }
 
 .navbarBrand {
@@ -88,12 +88,55 @@ input:checked+.slider:before {
 
 .row {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
 }
 
 .loginButton{
+  height: fit-content;
   background-color: Transparent;
   border: 2px solid var(--color-green);
   border-radius: 3px;
   color: var(--color-green-ultra-light);
+}
+
+.shortcuts{
+  display: flex;
+  align-self: flex-end;
+  gap: 30px;
+}
+
+
+
+.onMobile{
+  display: none;
+}
+
+.menu{
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .onMobile{
+    display: flex;
+    align-items: center;
+    width:fit-content;
+  }
+
+  .menu{
+    list-style:none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 78vw;
+  }
+
+  .menu ul{
+    list-style: none;
+  }
+
+  .noMobile{
+    display:none;
+  }
 }
