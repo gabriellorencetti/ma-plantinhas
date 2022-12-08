@@ -44,7 +44,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 2%;
-    margin-bottom: 2%;
+    /* margin-bottom: .8rem; */
 }
 @media only screen and (max-width: 1000px) {
     .formRows {
@@ -64,7 +64,6 @@
 .cep{
     display: flex;
     flex: 1;
-    /* background-color: red; */
 }
 .cepField {
     width: 250px;
@@ -84,7 +83,6 @@
     }
 }
 .rua{
-    /* background-color: red; */
     display: flex;
     flex: 3;
 }
@@ -110,7 +108,6 @@
 .bairro{
     display: flex;
     flex: 4;
-    /* background-color: green; */
 
 }
 .bairroField {
@@ -130,7 +127,6 @@
 .cidade{
     display: flex;
     flex: 4;
-    /* background-color: yellow; */
 
 }
 .cidadeField {
@@ -151,17 +147,13 @@
 .numero{
     display: flex;
     flex: 2;
-    /* background-color: blue; */
 
 }
 .numeroField {
     width: 100px;
     height: 3rem;
-    /* margin-left: 2rem; */
 }
-/* .numeroLabel{
-    margin-left: 2rem;
-} */
+
 @media only screen and (max-width: 1000px) {
     .numeroField {
         width: 250px;
@@ -171,4 +163,22 @@
     .numeroLabel {
         margin-left: 2rem;
     }
+}
+
+.infoIcons{
+    margin-left: .3rem;
+    margin-bottom: .1rem;
+    filter: invert(69%) sepia(82%) saturate(343%) hue-rotate(335deg) brightness(89%) contrast(94%);
+}
+.tooltip{
+    background-color: #DDA15E !important;
+    color: black !important;
+    border-color: transparent transparent black transparent !important;
+}
+.boxHelp{
+    margin-left: 2rem;
+    color: red;
+}
+.aux{
+    margin-bottom: 1.5rem;
 }

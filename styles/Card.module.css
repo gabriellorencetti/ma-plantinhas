@@ -48,7 +48,6 @@
     height: 3rem;
     margin-left: 2rem;
     margin-right: 2rem;
-    margin-bottom: 2rem;
 }
 @media only screen and (max-width: 1000px) {
     .Field {
@@ -60,12 +59,11 @@
 }
 .boxField{
     width: 100%;
-    /* height: 10%; */
 }
 .fields{
     width: 100%;
-    /* height: 20%; */
     display: flex;
+    margin-bottom: 1rem;
 }
 .label{
     margin-left: 2rem;
@@ -73,14 +71,19 @@
 .infoIcons{
     margin-left: .3rem;
     margin-bottom: .1rem;
-    /* color: #DDA15E; */
-    /* color: #DDA15E; */
     filter: invert(69%) sepia(82%) saturate(343%) hue-rotate(335deg) brightness(89%) contrast(94%);
 }
 .tooltip{
     background-color: #DDA15E !important;
     color: black !important;
-    /* border: 2px solid black !important; */
     border-color: transparent transparent black transparent !important;
 }
+.boxHelp{
+    margin-left: 2rem;
+    color: red;
+}
+.aux{
+    margin-bottom: 1.5rem;
+}
+
 
