@@ -11,6 +11,11 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -19,6 +24,7 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: #E6D8BC;
