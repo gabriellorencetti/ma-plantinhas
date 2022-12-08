@@ -1,20 +1,19 @@
-
 .productPage {
     background-color: var(--color-brown-ultra-light);
     display: flex;
     flex-direction: column;
     color: var(--color-brown-dark);
-  }
-
-
-
-.path{
-    font-weight: 400;
-    margin: 10px 30px;
 }
 
 
-.product{
+
+.path {
+    font-weight: 400;
+    margin: 1em;
+}
+
+
+.product {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -22,31 +21,33 @@
 }
 
 
-.images{
+.images {
     display: flex;
 }
-.productImages{
+
+.productImages {
     display: flex;
     flex-direction: column;
     margin: 30px;
 }
 
-.mainImage{
+.mainImage {
     width: 35vw;
 }
 
 @media (max-width: 707px) {
-    .productImages{
+    .productImages {
         display: flex;
         flex-direction: row;
     }
-    .mainImage{
+
+    .mainImage {
         width: 70vw;
     }
 }
 
 .image {
-    padding:10px;
+    padding: 10px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     object-fit: contain;
     width: 100% !important;
@@ -54,34 +55,35 @@
     height: unset !important;
 }
 
-.productInfo{
+.productInfo {
     margin: 0 50px;
-    
+
 }
 
-.productInfo h1{
+.productInfo h1 {
     font-family: 'Lexend Giga';
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
 }
-.productPage hr{
+
+.productPage hr {
     background-color: var(--color-brown);
 }
 
-.rating{
+.rating {
     display: flex;
     flex-direction: row;
     text-align: center;
     justify-content: space-between;
 }
 
-.productInfo{
+.productInfo {
     width: 40%;
     min-width: 340px;
 }
 
-.productInfo input{
+.productInfo input {
     background-color: #D9D9D9;
     width: 55px;
     margin: 10px;
@@ -91,17 +93,17 @@
     text-align: center;
 }
 
-.buyInfo{
+.buyInfo {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     width: 100%;
     margin: 40px 150px;
     flex-wrap: wrap;
-    
+
 }
 
-.buyButtons{
+.buyButtons {
     display: flex;
     flex-direction: column;
     width: fit-content;
@@ -109,21 +111,21 @@
     font-weight: 700;
 }
 
-.buyNow{
+.buyNow {
     background-color: var(--color-brown);
-    border:none;
-    border-radius:5px;
+    border: none;
+    border-radius: 5px;
 }
 
-.addToCart{
+.addToCart {
     background-color: var(--color-brown-light);
     color: var(--color-brown-dark);
-    border:none;
-    border-radius:5px;
+    border: none;
+    border-radius: 5px;
 
 }
 
-.buyButtons input{
+.buyButtons input {
     margin: 10px;
     width: 100%;
     height: fit-content;
@@ -136,18 +138,17 @@
     margin: -10px;
 }
 
-.price h1{
+.price h1 {
     font-weight: 600;
     font-size: 50px;
 }
 
-.price{
+.price {
     text-align: start;
 }
 
-.recommendations hr{
+.recommendations hr {
     background-color: var(--color-brown);
     width: 90%;
     margin: 0 auto;
 }
-
