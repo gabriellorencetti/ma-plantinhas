@@ -1,4 +1,4 @@
-.container{
+.container {
     width: 100%;
     height: 55vh;
     justify-self: center;
@@ -11,42 +11,49 @@
     display: flex;
     flex-direction: column;
 }
-.containerTop{
+
+.containerTop {
     width: 100%;
     display: flex;
-    flex:2;
+    flex: 2;
     justify-self: center;
     background-color: #C3C0A3;
     align-items: center;
-    
+
 }
-.title{
+
+.title {
     font-size: 2rem;
     margin-left: 12%;
     color: #582D18;
-    font-weight:600;
+    font-weight: 600;
 }
-.infoIcons{
+
+.infoIcons {
     margin-left: .3rem;
     margin-bottom: .1rem;
     filter: invert(16%) sepia(49%) saturate(1253%) hue-rotate(344deg) brightness(92%) contrast(88%);
 }
+
 @media only screen and (max-width: 1000px) {
     .pictureProduct {
         width: 6rem;
         height: 6rem;
     }
 }
-.Icons{
+
+.Icons {
     filter: invert(16%) sepia(49%) saturate(1253%) hue-rotate(344deg) brightness(92%) contrast(88%);
 }
+
 @media only screen and (max-width: 1000px) {
     .Icons {
         width: 1.5rem;
         height: 1.5rem;
     }
 }
-.cartBox{
+
+.cartBox {
     display: flex;
     width: 100%;
     justify-self: center;
@@ -56,20 +63,22 @@
     flex-direction: column;
     color: #582D18;
 }
-.compraInfo{
+
+.compraInfo {
     display: flex;
     width: 100%;
     flex: 6;
     align-items: center;
 }
-.totalBox{
+
+.totalBox {
     display: flex;
     width: 100%;
     flex: 2;
     flex-direction: row;
 }
 
-.cardProduct{
+.cardProduct {
     display: flex;
     width: 35%;
     height: 80%;
@@ -77,91 +86,113 @@
     margin-left: 10%;
     flex-direction: row;
 }
+
 @media only screen and (max-width: 1000px) {
     .cardProduct {
         flex-direction: column;
         width: 80%;
     }
 }
-.mainImage{
+
+.mainImage {
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 4;
 }
 
-.infoImage{
+.infoImage {
     display: flex;
     flex-direction: column;
     flex: 8;
 }
-.titleBox{
+
+.titleBox {
     display: flex;
-    flex:1;
+    flex: 1;
     justify-content: flex-start;
     align-items: flex-end;
     font-size: larger;
     font-weight: 600;
 }
+
 @media only screen and (max-width: 1000px) {
     .titleBox {
         margin-left: 2rem;
     }
 }
-.descBox{
+
+.descBox {
     display: flex;
-    flex:1;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
     font-size: small;
-    
+
 }
+
 @media only screen and (max-width: 1000px) {
     .descBox {
         margin-left: 2rem;
     }
 }
-.quantPriceBox{
+
+.quantPriceBox {
     display: flex;
-    flex:1;
+    flex: 1;
     flex-direction: row;
-    
+
 }
+
 @media only screen and (max-width: 1000px) {
     .quantPriceBox {
         margin-left: 2rem;
         padding-bottom: 1rem;
     }
 }
-.cardButtons{
+
+.cardButtons {
     display: flex;
-    flex:2.5;
+    flex: 2.5;
     justify-content: space-between;
     align-items: center;
 }
 
 
 
-.priceProduct{
+.priceProduct {
     display: flex;
-    flex:6;
-    justify-content: end;
+    flex: 6;
+    justify-content: flex-end;
     align-items: center;
-    
     margin-right: 1rem;
+    font-size: large;
+    font-weight: 600;
 }
-.totalPrice{
+
+.totalPrice {
     display: flex;
     flex: 5;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
-    font-size:xx-large;
+    font-size: xx-large;
+    font-weight: 600;
     margin-right: 10%;
 }
-.clearCart{
+
+@media only screen and (max-width: 1000px) {
+    .totalPrice {
+        font-size: large;
+        font-weight: 600;
+        /* margin-left: 2rem;
+        padding-bottom: 1rem; */
+    }
+}
+
+.clearCart {
     display: flex;
     flex: 5;
-    justify-content: start;
-    align-items:center;
+    justify-content: flex-start;
+    align-items: center;
     margin-left: 10%;
 }
