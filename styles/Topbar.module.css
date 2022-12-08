@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #283618;
+  background-color: var(--color-primary-dark);
 }
 
 .navbarBrand {
@@ -88,10 +88,11 @@ input:checked+.slider:before {
 
 .row {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
 }
 
-.loginButton{
+.loginButton {
   background-color: Transparent;
   border: 2px solid var(--color-green);
   border-radius: 3px;
