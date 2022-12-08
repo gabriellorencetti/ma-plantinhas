@@ -15,7 +15,13 @@ export default function SpecificProdut({ id }) {
   return (
     <div className={styles.productPage}>
       <div className={styles.path}>
-        home {">"} produtos em promoção {">"} <b>{product_list[0].name}</b>
+        <Link href="/">página inicial</Link>
+        {" > "}
+        <Link href="/">produtos em promoção</Link>
+        {" > "}
+        <Link href="/productPage">
+          <b>{product_list[0].name}</b>
+        </Link>
       </div>
 
       <div className={styles.product}>
